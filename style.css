@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-titulo: "Roboto", serif;
+    --font-texto: "Quicksand", serif;
+    --cor1: #0d1b2aff;
+    --cor2: #1b263bff;
+    --cor3: #415a77ff;
+    --cor4: #778da9ff;
+    --cor5: #e0e1ddff;
+    --cor6: #000000;
+}
+
+body{
+    font-family: var(--font-texto);
+    background-color: var(--cor4);
+    color: var(--cor6);
+    height: 100vh;
+}
+
+header{
+    background-color: var(--cor3);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    color: var(--cor6);
+    padding: 1.2rem  0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cor2);
+    margin: 0 2rem 1rem 0;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform  0.3s;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor3);
+    color: var(--cor4);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.caixa-grafico{
+    margin: 5rem;
+}
+
+.caixa-grafico_texto{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--cor4) solid 2px;
+}
+
+span{
+    font-weight: bold;
+    color: var(--cor3);
+}
